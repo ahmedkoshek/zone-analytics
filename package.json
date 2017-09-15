@@ -1,0 +1,19 @@
+{
+  "name": "zone-analytics",
+  "version": "1.0.0",
+  "description": "Taking a zone file (DNS files) from user and process them to use Watson Analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedkoshek/zone-analytics.git"
+  },
+  "author": "Ahmed Hassan Koshek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedkoshek/zone-analytics/issues"
+  },
+  "homepage": "https://github.com/ahmedkoshek/zone-analytics#readme"
+}
