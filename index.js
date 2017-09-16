@@ -6,6 +6,8 @@ var path = require('path');
 var app = express();
 var routes = require('./routes/pages');
 var api = require('./routes/api');
+var request = require('request');
+var fs = require('fs');
 
 
 // parse application/x-www-form-urlencoded
@@ -20,8 +22,20 @@ app.use(session({
   resave: true,
 }));
 
-app.use(express.static(path.join(__dirname, 'client/dist')));
+app.use(express.static(path.join(__dirname, 'client')));
 
+zone_file = path.join(__dirname, '/storage/zone_file.txt')
+fs.readFile(zone_file, 'utf8', function (err,data) {
+  if (err) {
+    return console.log(err);
+  }
+  data = data.split(/\r?\n/);
+  var lines = [];
+  for(var i = 0; i < data.length; i++){
+      lines.push(data[i].split(/[ ]+/));
+      console.log(data[i].split(/[ ]+/));
+  }
+});
 
 app.use('/api', api);
 app.use(routes);

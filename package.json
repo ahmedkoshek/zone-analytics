@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ahmedkoshek/zone-analytics/issues"
   },
-  "homepage": "https://github.com/ahmedkoshek/zone-analytics#readme"
+  "homepage": "https://github.com/ahmedkoshek/zone-analytics#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "request": "^2.81.0"
+  }
 }
