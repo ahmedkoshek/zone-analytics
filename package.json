@@ -18,11 +18,14 @@
   "homepage": "https://github.com/ahmedkoshek/zone-analytics#readme",
   "dependencies": {
     "body-parser": "^1.18.1",
+    "cfenv": "^1.0.4",
     "cookie-parser": "^1.4.3",
     "csv-to-array": "^1.0.2",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
-    "html-to-json": "^0.6.0",
-    "request": "^2.81.0"
+    "jsdom": "^11.2.0",
+    "json2csv": "^3.11.2",
+    "request": "^2.81.0",
+    "watson-developer-cloud": "^2.39.0"
   }
 }
